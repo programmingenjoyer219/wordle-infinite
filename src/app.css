@@ -1,0 +1,42 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+button {
+  @apply active:opacity-60;
+}
+
+.not-included,
+.included,
+.correct,
+.typing {
+  @apply flex items-center justify-center size-[2.5rem] font-bold sm:size-[2.75rem] sm:text-xl;
+}
+
+.key.key-not-included,
+.not-included {
+  @apply bg-[#818181] text-white;
+}
+
+.key.key-included,
+.included {
+  @apply bg-[#c2c23a] text-white;
+}
+
+.key.key-correct,
+.correct {
+  @apply bg-[#4ab84a] text-white;
+}
+
+.typing {
+  @apply bg-white text-black/75 border-2 border-[#818181];
+}
+
+.key,
+.action-key {
+  @apply flex items-center justify-center rounded-sm font-bold text-sm p-2 bg-[#ccc] min-[425px]:text-base min-[425px]:font-medium;
+}
+
+.key {
+  @apply h-[2.75rem] w-[1.75rem] min-[425px]:h-[3rem] min-[425px]:w-[2.5rem];
+}
