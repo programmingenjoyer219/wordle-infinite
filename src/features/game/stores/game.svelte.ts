@@ -27,19 +27,30 @@ export function getAnswer() {
 
 export function trackAnswer(playerInput: string) {
   const result = ["", "", "", "", ""];
+  const tracked = ["", "", "", "", ""];
 
   for (let i = 0; i < 5; i += 1) {
     if (playerInput[i] === answer[i]) {
       result[i] = "x";
+      tracked[i] = answer[i];
     } else {
       result[i] = "_";
     }
   }
 
   for (let i = 0; i < 5; i += 1) {
-    const index = answer.indexOf(playerInput[i]);
+    const char = playerInput[i];
+    const index = answer.indexOf(char);
+    // number of times 'char' appears in 'tracked'
+    const trackedCount = tracked.filter((t) => t === char).length;
+    // number of times 'char' appears in 'answer'
+    const answerCount = answer.split("").filter((a) => a === char).length;
+
     if (index !== -1 && result[i] !== "x") {
-      result[i] = "c";
+      if (trackedCount < answerCount) {
+        result[i] = "c";
+        tracked[i] = char;
+      }
     }
   }
 
