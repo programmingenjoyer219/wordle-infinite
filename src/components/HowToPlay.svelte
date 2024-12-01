@@ -11,7 +11,7 @@
 </script>
 
 <button id="how-to-play-btn" onclick={() => (openMenu = true)}>
-  <i class="ri-question-line text-2xl sm:text-3xl text-black/75"></i>
+  <i class="ri-question-line text-2xl sm:text-3xl text-zinc-300"></i>
   <span class="sr-only">How to play?</span>
 </button>
 
@@ -26,7 +26,7 @@
         <Letter status={letterStatusMap[key]}>{key}</Letter>
       {/each}
     </div>
-    <p class="text-sm sm:text-base">
+    <p class="text-sm sm:text-base text-zinc-300">
       <span class="font-bold">{char}</span>
       {sentence}
     </p>
@@ -35,15 +35,15 @@
 
 <Menu bind:visibile={openMenu}>
   <div
-    class="container overflow-y-scroll overscroll-contain max-w-xl max-h-[80vh] bg-gray-50 p-6 shadow-lg rounded-sm space-y-4"
+    class="container overflow-y-auto max-w-xl max-h-[80vh] bg-zinc-800 p-6 shadow-lg rounded-sm space-y-4"
   >
     <div>
-      <h1 class="text-xl sm:text-3xl text-gray-700 font-bold">How To Play</h1>
-      <h2 class="text-lg sm:text-xl text-gray-700">
+      <h1 class="text-xl sm:text-3xl text-zinc-300 font-bold">How To Play</h1>
+      <h2 class="text-lg sm:text-xl text-zinc-300">
         Guess the Wordle in 6 tries
       </h2>
     </div>
-    <ul class="list-disc pl-6 text-gray-700 text-sm sm:text-base">
+    <ul class="list-disc pl-6 text-zinc-300 text-sm sm:text-base">
       <li>Each guess must be a valid 5-letter word.</li>
       <li>
         The color of the tiles will change to show how close your guess was to
@@ -51,7 +51,7 @@
       </li>
     </ul>
     <div class="space-y-2">
-      <h3 class="text-base sm:text-lg text-gray-700 font-medium">Examples</h3>
+      <h3 class="text-base sm:text-lg text-zinc-300 font-medium">Examples</h3>
       <!-- example-1: WORDY -->
       {@render example(
         {

@@ -54,19 +54,19 @@
 {/snippet}
 
 <button id="leaderboard-btn" onclick={() => (openMenu = true)}>
-  <i class="ri-bar-chart-fill text-2xl sm:text-3xl text-black/75"></i>
+  <i class="ri-bar-chart-fill text-2xl sm:text-3xl text-zinc-300"></i>
   <span class="sr-only">Leaderboard</span>
 </button>
 
 <Menu bind:visibile={openMenu}>
   <div
-    class="container overflow-y-scroll overscroll-contain max-w-xl max-h-[80vh] bg-gray-50 p-6 shadow-lg rounded-sm space-y-4"
+    class="container overflow-y-auto max-w-xl max-h-[80vh] bg-zinc-800 p-6 shadow-lg rounded-sm space-y-4"
   >
-    <h1 class="text-xl sm:text-3xl text-gray-700 font-bold">Leaderboard</h1>
+    <h1 class="text-xl sm:text-3xl text-zinc-300 font-bold">Leaderboard</h1>
     {#if getLeaderboardQuery.isLoading}
-      <p class="text-xl text-center animate-pulse">Loading...</p>
+      <p class="text-xl text-center animate-pulse text-zinc-300">Loading...</p>
     {:else if getLeaderboardQuery.error}
-      <p>Oops... something went wrong. Try refreshing.</p>
+      <p class="text-zinc-300">Oops... something went wrong. Try refreshing.</p>
     {:else}
       {@render table(getLeaderboardQuery.data)}
     {/if}
@@ -75,7 +75,7 @@
 
 <style>
   .table {
-    @apply flex flex-col gap-2;
+    @apply flex flex-col gap-2 text-zinc-300;
   }
   .row {
     display: grid;

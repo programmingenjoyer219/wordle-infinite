@@ -5,7 +5,7 @@
 </script>
 
 <header class="py-3">
-  <div class="container mx-auto max-w-xl border-b-2 border-gray-300">
+  <div class="container mx-auto max-w-xl border-b-2 border-zinc-600">
     <div class="flex justify-between p-2">
       <div class="flex gap-3">
         <!-- How to play -->
@@ -17,11 +17,11 @@
       </div>
       <!-- WORDLE -->
       <a href="/" class="flex items-center gap-1">
-        <h1 class="text-xl min-[425px]:text-2xl font-bold text-black/75">
+        <h1 class="text-xl min-[425px]:text-2xl font-bold text-zinc-300">
           WORDLE
         </h1>
         <i
-          class="ri-infinity-line text-xl min-[425px]:text-2xl font-bold text-black/75"
+          class="ri-infinity-line text-xl min-[425px]:text-2xl font-bold text-zinc-300"
         ></i>
       </a>
       <div class="flex gap-3">

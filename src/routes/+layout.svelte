@@ -18,6 +18,6 @@
   <title>Wordle Infinite</title>
 </svelte:head>
 
-<main class="min-h-dvh font-mono">
+<main class="min-h-dvh font-mono bg-zinc-800">
   {@render children()}
 </main>

@@ -15,14 +15,14 @@
   <img
     src={user?.image}
     alt="{user?.name}'s profile image"
-    class="size-8 rounded-full border-2 border-black/50"
+    class="size-8 rounded-full border-2 border-zinc-300"
   />
   <span class="sr-only">Profile</span>
 </button>
 
 <Menu bind:visibile={openMenu}>
   <div
-    class="container max-w-[280px] bg-gray-50 p-6 shadow-lg rounded-sm space-y-3 text-gray-700"
+    class="container max-w-[280px] bg-zinc-800 p-6 shadow-lg rounded-sm space-y-3 text-zinc-300"
   >
     <div class="flex flex-col gap-1">
       <img
@@ -47,9 +47,10 @@
     <SignOut>
       <div
         slot="submitButton"
-        class="w-[232px] rounded-sm bg-black/75 text-gray-50 font-bold p-2"
+        class="w-[232px] rounded-sm bg-zinc-900 text-zinc-100 font-bold p-2"
       >
         Log Out
+        <i class="ri-logout-box-r-line"></i>
       </div>
     </SignOut>
   </div>

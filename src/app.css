@@ -20,21 +20,21 @@ button {
 
 .key.key-included,
 .included {
-  @apply bg-[#c2c23a] text-white;
+  @apply bg-[#c2c23a]/75 text-white;
 }
 
 .key.key-correct,
 .correct {
-  @apply bg-[#4ab84a] text-white;
+  @apply bg-[#4ab84a]/75 text-white;
 }
 
 .typing {
-  @apply bg-white text-black/75 border-2 border-[#818181];
+  @apply bg-zinc-800 text-zinc-100 border-2 border-[#818181];
 }
 
 .key,
 .action-key {
-  @apply flex items-center justify-center rounded-sm font-bold text-sm p-2 bg-[#ccc] min-[425px]:text-base min-[425px]:font-medium;
+  @apply flex items-center justify-center rounded-sm font-bold text-sm p-2 text-zinc-300 bg-zinc-900 border-2 border-zinc-500 min-[425px]:text-base min-[425px]:font-medium;
 }
 
 .key {
