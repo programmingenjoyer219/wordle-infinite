@@ -2,6 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html,
+body {
+  @apply bg-zinc-800;
+}
+
 button {
   @apply active:opacity-60;
 }
